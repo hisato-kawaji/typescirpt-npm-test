@@ -1,0 +1,29 @@
+{
+  "name": "kawaji-test",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "version": "1.0.4",
+  "description": "test module",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha --reporter spec",
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js -- -R spec"
+  },
+  "author": "Hisato Kawaji",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/mocha": "^2.2.48",
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.0.4",
+    "postinstall-build": "^5.0.1",
+    "ts-node": "^5.0.1",
+    "typescript": "^2.7.2"
+  }
+}
